@@ -1,12 +1,11 @@
 
-# CLEF2025 CheckThat (Task 4a & 4b) README
+# CLEF2025 CheckThat - Task 4a 
 
 ## 🏁 Project Overview
 
 This repository contains the full pipeline to tackle the CLEF2025 CheckThat Lab, focusing on Task 4:
 
 * **4a:** Scientific Web Discourse Detection (multilabel classification)
-* **4b:** Scientific Claim Source Retrieval (ranking & retrieval)
 
 We aim for a reproducible, well-documented workflow using **Google Colab**, **GitLab CI/CD**, **DVC**, and best NLP practices.
 
