@@ -186,3 +186,18 @@ El objetivo principal es maximizar el macro-averaged F1-score en una tarea de cl
 - Para el reto CLEF2025 CheckThat Lab  
 - Contacto: [tu-email@dominio.com]
 
+
+
+# Resultados de Experimentos - CLEF2025 Subtask4a
+
+| Experimento            | Modelo Base            | Macro F1 | Cat1 F1 | Cat2 F1 | Cat3 F1 | Umbral | LR    | Épocas | Notas                      |
+|------------------------|------------------------|----------|---------|---------|---------|--------|-------|--------|---------------------------|
+| Baseline RoBERTa      | cardiffnlp/twitter-roberta-base-2022-154m | 0.82     | 0.81    | 0.86    | 0.85    | >0     | 2e-5  | 10     | baseline original        |
+| Fase 1 DeBERTa        | microsoft/deberta-v3-base               |          |         |         |         | >0     | 2e-5  | 10     | cambio modelo base      |
+| Fase 2 Threshold Tuning | microsoft/deberta-v3-base            |          |         |         |         | optimizado | 2e-5  | 10     | ajuste de umbral       |
+| Fase 3 Fine-tuning    | microsoft/deberta-v3-base               |          |         |         |         | optimizado | 3e-5  | 10     | ajuste hiperparámetros |
+| Fase 4 Class Weights  | microsoft/deberta-v3-base               |          |         |         |         | optimizado | 3e-5  | 10     | pesos clase minoritaria|
+| Fase 5 Augmentation   | microsoft/deberta-v3-base               |          |         |         |         | optimizado | 3e-5  | 10     | back-translation       |
+| Fase 6 Ensemble       | DeBERTa + RoBERTa ensemble             |          |         |         |         | optimizado | 3e-5  | 10     | promedio de modelos    |
+
+
