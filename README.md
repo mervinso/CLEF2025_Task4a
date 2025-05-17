@@ -108,8 +108,8 @@ clef2025_task4a/
 ---
 ## 📌 Créditos
 
-- Desarrollado por: [Tu Nombre o Equipo]  
+- Desarrollado por: UTB - CEDNAV  
 - Para el reto CLEF2025 CheckThat Lab  
-- Contacto: [tu-email@dominio.com]
+- Contacto: sosam@utb.edu.co
 
 
