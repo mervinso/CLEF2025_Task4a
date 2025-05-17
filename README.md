@@ -96,7 +96,7 @@ clef2025_task4a/
   "cat2": 0.6438,
   "cat3": 0.7325
 }
-
+```
 ---
 
 ## 🔗 References
