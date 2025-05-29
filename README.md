@@ -2,9 +2,7 @@
 # CLEF2025 CheckThat Lab – Subtask 4a: Scientific Web Discourse Detection
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/mervinso/CLEF2025_Task4a)
-![GitHub license](https://img.shields.io/github/license/mervinso/CLEF2025_Task4a)
-
-<!-- Esto es un comentario oculto en un archivo Markdown y no será visible en la vista previa -->
+<!-- ![GitHub license](https://img.shields.io/github/license/mervinso/CLEF2025_Task4a) -->
 
 ## 🏁 Overview
 
