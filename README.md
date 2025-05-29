@@ -44,6 +44,16 @@ git clone https://github.com/mervinso/CLEF2025_Task4a.git
 cd CLEF2025_Task4a
 ```
 
+Download the dataset:
+- Obtain the files `ct_train.tsv` and `ct_test.tsv` as provided by the organizers.
+- Place them in the data/ directory:
+```bash
+CLEF2025_Task4a/
+  └── data/
+      ├── ct_train.tsv
+      └── ct_test.tsv
+```
+
 ---
 
 ## 📋 General Notes
@@ -83,13 +93,14 @@ clef2025_task4a/
 │ ├── ct_dev.tsv
 │ ├── ct_test.tsv
 │ └── ct_train.tsv
+├── models/
+│   └── final_model/
+├── predictions/
+│   └── predictions.csv
 ├── notebooks/
-│ └── baselines.ipynb
-├── scripts/
-│ ├── evaluate.py
-│ ├── preprocess.py
-│ └── train.py
+│   └── clef2025_pipeline.ipynb
 └── requirements.txt
+├── README.md
 ```
 ---
 
@@ -137,6 +148,12 @@ clef2025_task4a/
 - Codalab: [Competition Link](https://codalab.lisn.upsaclay.fr/competitions/22359)
 
 ---
+
+## 📄 License
+This project is licensed under the MIT License. See LICENSE for details.
+
+---
+
 ## 📌 Credits
 
 - Developed by: UTB - CEDNAV
