@@ -3,45 +3,52 @@
 
 ## 🏁 Project Overview
 
-This repository contains the full pipeline the CLEF2025 CheckThat Lab, focusing on Task 4:
-
-* **4a:** Scientific Web Discourse Detection (multilabel classification)
-
-Este repositorio contiene los experimentos y resultados obtenidos en el reto CLEF2025 Subtask4a, orientado a la detección de discurso científico en Twitter.  
-El objetivo principal es maximizar el macro-averaged F1-score en una tarea de clasificación multietiqueta.
+This repository details our submission for the CLEF2025 CheckThat Lab Task 4a: Scientific Web Discourse Detection. The primary goal is to accurately identify scientific discourse in Twitter data using a multilabel classification approach, aiming to maximize the macro-averaged F1-score.
 
 ---
 
 ## 📌 Objective
 
-This notebook and codebase describe the **experimental approach** taken to develop a multi-label classification system for identifying scientific discourse in Twitter data. The model is built on top of `microsoft/deberta-v3-base` and optimized through a multi-phase strategy aimed at maximizing macro-averaged F1.
+This notebook and codebase describe the **experimental approach** taken to develop a multi-label classification system for identifying scientific discourse in Twitter data. The model is built on top of `microsoft/deberta-v3-base` and optimized through a multi-phase strategy aimed at maximizing macro-averaged F1-score.
 
 ---
 
-## 📋 Notas generales
+## 📋 General Notes
 
 - **Dataset:** 1229 tweets (train), 137 (dev), 240 (test)
-- **Tarea:** Clasificación multietiqueta (cat1, cat2, cat3)
-- **Métrica objetivo:** macro-averaged F1-score
-- **Formato de entrega:** predictions.csv con columnas [index, cat1_pred, cat2_pred, cat3_pred]
+- **Task:** Multilabel classification (cat1, cat2, cat3)
+- **Target metric:** macro-averaged F1-score
+- **Submission format:** predictions.csv with columns [index, cat1_pred, cat2_pred, cat3_pred]
 
 ---
 ## 🔬 Dataset
 
 - `ct_train.tsv` – training set
+- `ct_dev.tsv` – development set
 - `ct_test.tsv` – test set for leaderboard submission
 - Format: each tweet labeled across three binary categories (`cat1`, `cat2`, `cat3`)
 
 ---
 
+## 📋 Requirements
+
+To run this project, you need to install the necessary Python packages. These are listed in the `requirements.txt` file.
+You can install them using pip:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
 ## 🚀 How to Reproduce (in Colab)
 
-1. Open [`clef2025_pipeline.ipynb`](notebooks/clef2025_pipeline.ipynb) in Google Colab.
-2. Clone the official CLEF2025 CheckThat repository and extract the folder `task4/subtask_4a`.
-3. Copy `ct_train.tsv` and `ct_test.tsv` into the `/data/` folder inside your working directory.
-4. Execute the notebook sequentially through all six phases:
+1. Install the required packages: `pip install -r requirements.txt`
+2. Open [`baselines.ipynb`](notebooks/baselines.ipynb) in Google Colab.
+3. Clone the official CLEF2025 CheckThat repository and extract the folder `task4/subtask_4a`.
+4. Copy `ct_train.tsv` and `ct_test.tsv` into the `/data/` folder inside your working directory.
+5. Execute the notebook sequentially through all six phases:
    - Baseline → Threshold Tuning → Fine-Tuning → Class Weights → Ensemble → Final Prediction.
-5. The output file `predictions.csv` will be saved under `/predictions/` and is ready to be submitted to the leaderboard.
+6. The output file `predictions.csv` will be saved under `/predictions/` and is ready to be submitted to the leaderboard.
 
 ---
 
@@ -50,15 +57,16 @@ This notebook and codebase describe the **experimental approach** taken to devel
 ```
 clef2025_task4a/
 ├── data/
-│ ├── ct_train.tsv
+│ ├── ct_dev.tsv
 │ ├── ct_test.tsv
-│ └── thresholds.json
-├── models/
-│ └── final_model/
-├── predictions/
-│ └── predictions.csv
+│ └── ct_train.tsv
 ├── notebooks/
-│ └── clef2025_pipeline.ipynb
+│ └── baselines.ipynb
+├── scripts/
+│ ├── evaluate.py
+│ ├── preprocess.py
+│ └── train.py
+└── requirements.txt
 ```
 ---
 
@@ -101,15 +109,15 @@ clef2025_task4a/
 
 ## 🔗 References
 
-* CLEF2025 CheckThat: [https://checkthat.gitlab.io/clef2025/](https://checkthat.gitlab.io/clef2025/)
-* GitLab Repo: [https://gitlab.com/checkthat\_lab/clef2025-checkthat-lab](https://gitlab.com/checkthat_lab/clef2025-checkthat-lab)
-* Codalab: [https://codalab.lisn.upsaclay.fr/competitions/22359](https://codalab.lisn.upsaclay.fr/competitions/22359)
+- CLEF2025 CheckThat: [Official Website](https://checkthat.gitlab.io/clef2025/)
+- GitLab Repo: [Official Repository](https://gitlab.com/checkthat_lab/clef2025-checkthat-lab)
+- Codalab: [Competition Link](https://codalab.lisn.upsaclay.fr/competitions/22359)
 
 ---
-## 📌 Créditos
+## 📌 Credits
 
-- Desarrollado por: UTB - CEDNAV  
-- Para el reto CLEF2025 CheckThat Lab  
-- Contacto: sosam@utb.edu.co
+- Developed by: UTB - CEDNAV
+- For the CLEF2025 CheckThat Lab challenge
+- Contact: sosam@utb.edu.co
 
 
