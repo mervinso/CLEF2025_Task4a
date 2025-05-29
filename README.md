@@ -1,15 +1,48 @@
 
-# CLEF2025 CheckThat - Subtask4a: 
+# CLEF2025 CheckThat Lab – Subtask 4a: Scientific Web Discourse Detection
 
-## 🏁 Project Overview
+![GitHub last commit](https://img.shields.io/github/last-commit/mervinso/CLEF2025_Task4a)
+![GitHub license](https://img.shields.io/github/license/mervinso/CLEF2025_Task4a)
 
-This repository details our submission for the CLEF2025 CheckThat Lab Task 4a: Scientific Web Discourse Detection. The primary goal is to accurately identify scientific discourse in Twitter data using a multilabel classification approach, aiming to maximize the macro-averaged F1-score.
+## 🏁 Overview
+
+This repository details our submission for the CLEF2025 CheckThat Lab Task 4a: Scientific Web Discourse Detection. The primary goal is to accurately identify scientific discourse in Twitter data using a multilabel classification approach, aiming to maximize the macro-averaged F1-score. Provides code, data structure, and reproducible experiments.
+
+Target audience: researchers, data scientists, and practitioners interested in natural language processing (NLP), social media analysis, and machine learning competitions.
 
 ---
 
 ## 📌 Objective
 
 This notebook and codebase describe the **experimental approach** taken to develop a multi-label classification system for identifying scientific discourse in Twitter data. The model is built on top of `microsoft/deberta-v3-base` and optimized through a multi-phase strategy aimed at maximizing macro-averaged F1-score.
+
+---
+
+## 📦 Requirements
+
+To run this project, you need to install the necessary Python packages. These are listed in the `requirements.txt` file.
+You can install them using pip:
+
+- Python 3.8 or higher
+- PyTorch >= 1.12
+- Transformers >= 4.34
+- scikit-learn
+- pandas
+- tqdm
+
+Install all dependencies with:
+```bash
+pip install -r requirements.txt
+```
+---
+
+## 🚚 Installation & Data Preparation
+
+Clone this repository:
+```bash
+git clone https://github.com/mervinso/CLEF2025_Task4a.git
+cd CLEF2025_Task4a
+```
 
 ---
 
@@ -27,16 +60,6 @@ This notebook and codebase describe the **experimental approach** taken to devel
 - `ct_dev.tsv` – development set
 - `ct_test.tsv` – test set for leaderboard submission
 - Format: each tweet labeled across three binary categories (`cat1`, `cat2`, `cat3`)
-
----
-
-## 📋 Requirements
-
-To run this project, you need to install the necessary Python packages. These are listed in the `requirements.txt` file.
-You can install them using pip:
-```bash
-pip install -r requirements.txt
-```
 
 ---
 
