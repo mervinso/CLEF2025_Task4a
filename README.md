@@ -4,6 +4,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/mervinso/CLEF2025_Task4a)
 ![GitHub license](https://img.shields.io/github/license/mervinso/CLEF2025_Task4a)
 
+<!-- Esto es un comentario oculto en un archivo Markdown y no será visible en la vista previa -->
+
 ## 🏁 Overview
 
 This repository details our submission for the CLEF2025 CheckThat Lab Task 4a: Scientific Web Discourse Detection. The primary goal is to accurately identify scientific discourse in Twitter data using a multilabel classification approach, aiming to maximize the macro-averaged F1-score. Provides code, data structure, and reproducible experiments.
