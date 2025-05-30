@@ -98,7 +98,7 @@ clef2025_task4a/
 ├── predictions/
 │   └── predictions.csv
 ├── notebooks/
-│   └── clef2025_pipeline.ipynb
+│   └── CLEF2025_SubTask4a_SciDiscourse.ipynb
 └── requirements.txt
 ├── README.md
 ```
