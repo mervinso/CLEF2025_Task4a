@@ -21,17 +21,8 @@ This notebook and codebase describe the **experimental approach** taken to devel
 
 ## 📦 Requirements
 
-To run this project, you need to install the necessary Python packages. These are listed in the `requirements.txt` file.
-You can install them using pip:
+To run this project, you need to install the necessary Python packages. These are listed in the `requirements.txt` file. Install all dependencies with:
 
-- Python 3.8 or higher
-- PyTorch >= 1.12
-- Transformers >= 4.34
-- scikit-learn
-- pandas
-- tqdm
-
-Install all dependencies with:
 ```bash
 pip install -r requirements.txt
 ```
