@@ -77,7 +77,7 @@ CLEF2025_Task4a/
 ## 🚀 How to Reproduce (in Colab)
 
 1. Install the required packages: `pip install -r requirements.txt`
-2. Open [`baselines.ipynb`](notebooks/baselines.ipynb) in Google Colab.
+2. Open [`baselines.ipynb`][![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X9OuZ5tziJ7UIxwPv5jZsDEGHcagN9fC?usp=sharing) in Google Colab.
 3. Clone the official CLEF2025 CheckThat repository and extract the folder `task4/subtask_4a`.
 4. Copy `ct_train.tsv` and `ct_test.tsv` into the `/data/` folder inside your working directory.
 5. Execute the notebook sequentially through all six phases:
