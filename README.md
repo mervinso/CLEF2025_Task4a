@@ -2,7 +2,7 @@
 # CLEF2025 CheckThat Lab - Subtask 4a: Scientific Web Discourse Detection
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/mervinso/CLEF2025_Task4a)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mervinso/CLEF2025_Task4a/blob/main/notebooks/clef2025_pipeline.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X9OuZ5tziJ7UIxwPv5jZsDEGHcagN9fC?usp=sharing)
 <!-- ![GitHub license](https://img.shields.io/github/license/mervinso/CLEF2025_Task4a) -->
 
 ## 🏁 Overview
