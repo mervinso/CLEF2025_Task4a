@@ -76,14 +76,13 @@ CLEF2025_Task4a/
 
 ## 🚀 How to Reproduce (in Colab)
 
-1. Install the required packages: `pip install -r requirements.txt`
-2. Open `CLEF2025-SubTask4a-SciDiscourse.ipynb`[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X9OuZ5tziJ7UIxwPv5jZsDEGHcagN9fC?usp=sharing) in Google Colab.
-3. Clone the official CLEF2025 CheckThat repository and extract the folder `task4/subtask_4a`.
-4. Copy `ct_train.tsv` and `ct_test.tsv` into the `/data/` folder inside your working directory.
-5. Execute the notebook sequentially through all six phases:
-   - Baseline → Threshold Tuning → Fine-Tuning → Class Weights → Ensemble → Final Prediction.
-6. The output file `predictions.csv` will be saved under `/predictions/` and is ready to be submitted to the leaderboard.
-
+1.Open `CLEF2025-SubTask4a-SciDiscourse.ipynb`[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X9OuZ5tziJ7UIxwPv5jZsDEGHcagN9fC?usp=sharing) in Google Colab.
+2. Clone the official CLEF2025 CheckThat repository and extract the folder `task4/subtask_4a`.
+3. Copy `ct_train.tsv` and `ct_test.tsv` into the `/data/` folder inside your working directory.
+4. Execute the notebook sequentially through all six phases:
+- Baseline → Threshold Tuning → Fine-Tuning → Class Weights → Ensemble → Final Prediction.
+5. The output file `predictions.csv` will be saved under `/predictions/` and is ready to be submitted to the leaderboard.
+  
 ---
 
 ## 📂 Project Structure
