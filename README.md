@@ -80,7 +80,7 @@ CLEF2025_Task4a/
 2. Clone the official CLEF2025 CheckThat repository and extract the folder `task4/subtask_4a`.
 3. Copy `ct_train.tsv` and `ct_test.tsv` into the `/data/` folder inside your working directory.
 4. Execute the notebook sequentially through all six phases:
-- Baseline → Threshold Tuning → Fine-Tuning → Class Weights → Ensemble → Final Prediction.
+    - Baseline → Threshold Tuning → Fine-Tuning → Class Weights → Ensemble → Final Prediction.
 5. The output file `predictions.csv` will be saved under `/predictions/` and is ready to be submitted to the leaderboard.
   
 ---
