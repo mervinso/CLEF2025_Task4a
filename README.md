@@ -76,7 +76,7 @@ CLEF2025_Task4a/
 
 ## 🚀 How to Reproduce (in Colab)
 
-1.Open `CLEF2025-SubTask4a-SciDiscourse.ipynb`[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X9OuZ5tziJ7UIxwPv5jZsDEGHcagN9fC?usp=sharing) in Google Colab.
+1. Open `CLEF2025-SubTask4a-SciDiscourse.ipynb`[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X9OuZ5tziJ7UIxwPv5jZsDEGHcagN9fC?usp=sharing) in Google Colab.
 2. Clone the official CLEF2025 CheckThat repository and extract the folder `task4/subtask_4a`.
 3. Copy `ct_train.tsv` and `ct_test.tsv` into the `/data/` folder inside your working directory.
 4. Execute the notebook sequentially through all six phases:
